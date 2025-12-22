@@ -2,11 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Playfair Display, serif;
+    font-family: La Belle Aurore, serif;
 }
 
 .navbar {
-    background: #FFFDD0;
+    background: white;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -194,4 +194,29 @@
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+/* Hero Section Styles */
+
+.main {
+    background-color: white;
+}
+
+.main__container {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content h1 {
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
 }

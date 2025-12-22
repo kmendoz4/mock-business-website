@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Flora & Fauna</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/62e8cceed4.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Navbar Section -->
     <nav class="navbar"> <!-- Navigation Bar -->
         <div class="navbar__container">
             <!-- Logo Section -->
-             <a href="/" id="navbar__logo">Flora & Fauna</a>
+             <a href="/" id="navbar__logo">
+                <i class="fa-brands fa-pagelines"></i> Flora & Fauna</a>
              <div class="navbar__toggle" id="mobile-menu"> <!--.navbar__toggle#mobilemenu this creates div and id at same time-->
                 <span class="bar"></span> <!-- shift option down arrow -->
                 <span class="bar"></span>
@@ -29,6 +32,22 @@
              </ul>
         </div>
     </nav>
+
+    <!-- Hero Section -->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Flora & Fauna</h1> <!-- Main heading for the hero section -->
+                <h2>Clothing</h2>
+                <p>See what makes us different</p>
+                <button class="main__btn"><a href="/">Get Started</a></button>
+            </div>
+            <div class="main__img--container">
+                <img src="images/SilliesPic1.jpg" alt="Sillies frolicking in field" id="main__img">
+            </div>
+        </div>
+    </div>
+
     <script src = "app.js"></script>
 </body>
 </html>
