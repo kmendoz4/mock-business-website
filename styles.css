@@ -299,24 +299,49 @@
 
 .styles {
     background-color: #fffff7;
+        padding: 1rem 0;
 }
 
-.styles__container a {
+.styles__title {
+    display: block;
+    text-align: center;
     text-decoration: none;
     color: black;
     font-size: 3rem;
-    padding-top: 1rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+/* Container that holds image items side-by-side with 4rem side padding */
+.styles__container {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 4rem; /* 4rem left/right padding as requested */
 }
 
 .styles__img {
-    flex: 1;
-    padding: 2rem 4rem;
+        flex: 0 1 calc(50% - 1rem); /* two columns; subtract small portion for gap */
+        padding: 0.5rem 0;
+        display: block;
 }
 
 .styles__img img {
-    max-width: 100%;
-    height: auto;
+        width: 100%;
+        height: auto;
+        display: block;
+}
+
+@media (max-width: 768px) {
+    .styles__container {
+        flex-direction: column;
+        padding: 0 1rem; /* reduce side padding on small screens */
+        gap: 1rem;
+    }
+
+    .styles__img {
+        flex: 1 1 100%;
+        padding: 0.25rem 0;
+    }
 }
