@@ -340,6 +340,42 @@
     padding: 1rem 0;
 }
 
+.styles__bottom__container {
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+   align-items: center;
+   padding: 0 4rem;
+}
+
+.styles__container__img {
+    flex: 1;
+    height: 600px;
+    background-image: url(images/stylesSection2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.styles__text {
+    color: white;
+    font-size: 6rem;   
+}
+
+.styles__bottom__img {
+    flex: 1;
+    max-width: 500px;
+}
+
+.styles__bottom__img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 @media (max-width: 768px) {
     .styles__container {
         flex-direction: column;
