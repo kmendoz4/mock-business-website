@@ -7,7 +7,7 @@
 
 .navbar {
     background: #fffff7;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
 .navbar__container {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     z-index: 1;
     width: 100%;
     max-width: 1300px; /* Increased max-width for larger screens */
@@ -299,7 +299,7 @@
 
 .styles {
     background-color: #fffff7;
-        padding: 1rem 0;
+    padding: 1rem 0;
 }
 
 .styles__title {
@@ -324,13 +324,20 @@
 .styles__img {
         flex: 0 1 calc(50% - 1rem); /* two columns; subtract small portion for gap */
         padding: 0.5rem 0;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .styles__img img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        max-height: 800px;
         display: block;
+}
+
+.styles__bottom {
+    background-color: #fffff7;
+    padding: 1rem 0;
 }
 
 @media (max-width: 768px) {
