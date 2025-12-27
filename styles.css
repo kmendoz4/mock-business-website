@@ -205,14 +205,14 @@
 
 .main {
    position: relative; 
-   height: 100vh; 
+   height: 85vh; 
    width: 100%; 
-   padding: 0 4rem; /* inset image from left/right by 4rem */ 
+   padding: 0 2rem; /* inset image from left/right by 4rem */ 
    background-image: url(images/SilliesPic1.jpg); 
    background-origin: content-box; /* treat content box as background origin */ 
    background-clip: content-box; /* prevent background from painting into the padding */ 
    background-size: cover; 
-   background-position: 40% 80%; 
+   background-position: 40% 77%; 
    background-repeat: no-repeat; 
    display: flex; 
    justify-content: center; 
@@ -310,8 +310,8 @@
     color: black;
     font-size: 4rem;
     padding-bottom: 1rem;
-    font-weight: bold; 
-    letter-spacing: 3px;
+    /* font-weight: bold; 
+    letter-spacing: 3px; */
 }
 
 /* Container that holds image items side-by-side with 4rem side padding */
@@ -334,22 +334,23 @@
 
 .styles-1__img img {
         width: auto;
-        max-height: 700px;
+        max-height: 650px;
         display: block;
 }
 
 .styles-2 {
     background-color: #fffff7;
-    padding: 1rem 3rem;
+    padding: 4rem 10rem;
 }
 
 .styles-2__container {
    display: flex;
    gap: 2rem;
    justify-content: center;
-   align-items: center;
-   padding: 2rem 4rem;
+   align-items: flex-start;
+   padding: 2rem 2rem;
    background-color: rgb(242, 242, 239);
+   flex: 0 1 calc(50% - 1rem);
 }
 
 .styles-2__bg__img {
@@ -366,8 +367,9 @@
 
 .styles-2__text {
     color: white;
-    font-size: 6rem;   
+    font-size: 10vh;
     text-align: center;
+    font-display: block;
 }
 
 .styles-2__img {
