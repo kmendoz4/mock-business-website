@@ -356,7 +356,7 @@
 .styles-2__bg__img {
     flex: 1;
     height: 600px;
-    background-image: url(images/stylesSection2.jpg);
+    background-image: url(images/stylesSection2.avif);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -377,11 +377,26 @@
     max-width: 500px;
 }
 
-.styles-2__img img {
-    width: 100%;
-    height: auto;
-    display: block;
+.styles-2__img__crop {
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.styles-2__img img {
+    display: block;
+    width: 100%;
+}
+
+.styles-3 {
+    background-color: #fffff7;
+    padding: 4rem 0;
+}
+
+
 
 @media (max-width: 768px) {
     .styles__container {
