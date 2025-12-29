@@ -345,7 +345,6 @@
 
 .styles-2__container {
    display: flex;
-   gap: 2rem;
    justify-content: center;
    align-items: flex-start;
    padding: 2rem 2rem;
@@ -356,7 +355,7 @@
 .styles-2__bg__img {
     flex: 1;
     height: 600px;
-    background-image: url(images/stylesSection2.avif);
+    background-image: url(images/stylesSection3.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -370,15 +369,18 @@
     font-size: 10vh;
     text-align: center;
     font-display: block;
+    font: La Belle Aurore, sans-serif;
 }
 
 .styles-2__img {
     flex: 1;
     max-width: 500px;
+    justify-content: center;
+    display: flex;
 }
 
 .styles-2__img__crop {
-    width: 1000px;
+    width: 100%;
     height: 600px;
     overflow: hidden;
     display: flex;
@@ -393,20 +395,28 @@
 
 .styles-3 {
     background-color: #fffff7;
-    padding: 4rem 0;
+    padding: 1rem 0;
 }
 
+.styles-3__container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 12rem; /* 4rem left/right padding as requested */
+}
 
+.styles-3__img {
+    flex: 0 1 calc(33.33% - 1rem); /* three columns; subtract small portion for gap */
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-@media (max-width: 768px) {
-    .styles__container {
-        flex-direction: column;
-        padding: 0 1rem; /* reduce side padding on small screens */
-        gap: 1rem;
-    }
-
-    .styles__img {
-        flex: 1 1 100%;
-        padding: 0.25rem 0;
-    }
+.styles-3__img img {
+    width: auto;
+    max-height: 70vh;
+    display: block;
 }
