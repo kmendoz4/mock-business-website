@@ -355,7 +355,7 @@
 
 .styles-2__bg__img {
     flex: 1;
-    height: 600px;
+    aspect-ratio: 1 / 1;
     background-image: url(images/stylesSection3.jpg);
     background-size: cover;
     background-position: center;
@@ -363,18 +363,19 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    min-height: 300px;
 }
 
 .styles-2__text {
     color: white;
-    font-size: 10vh;
+    font-size: clamp(2rem, 8vw, 10vh);
     text-align: center;
     font-display: block;
 }
 
 .styles-2__img {
     flex: 1;
-    max-width: 500px;
+    max-width: 663px;
     justify-content: center;
     display: flex;
     width: auto;
@@ -388,7 +389,7 @@
 
 .styles-2__crop {
     overflow: hidden;
-    height: 600px;
+    aspect-ratio: 1 / 1;
     display: flex;
     justify-content: center;
     align-items: center;
